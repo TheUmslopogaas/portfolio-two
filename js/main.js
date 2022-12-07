@@ -105,22 +105,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    function moveToContacts() {
-        const linkToContacts = document.getElementById('linkToContacts')
+    // function moveToContacts() {
+    //     const linkToContacts = document.getElementById('linkToContacts')
 
-        linkToContacts.addEventListener('click', (event) => {
-            const searchSection = document.getElementById('contacts')
+    //     linkToContacts.addEventListener('click', (event) => {
+    //         const searchSection = document.getElementById('contacts')
 
-            event.preventDefault()
-            const { top, bottom } = searchSection.getBoundingClientRect()
+    //         event.preventDefault()
+    //         const { top, bottom } = searchSection.getBoundingClientRect()
 
 
-            window.scrollTo({
-                top: window.scrollY + top,
-                behavior: "smooth"
-            });
-        })
-    }
+    //         window.scrollTo({
+    //             top: window.scrollY + top,
+    //             behavior: "smooth"
+    //         });
+    //     })
+    // }
 
     function scrollToSection() {
         const items = document.querySelectorAll('.header__menu-item');
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 if (document.getElementById('pagepiling')) {
                     scrollToSection();
-                    moveToContacts()
+                    // moveToContacts()
                 }
             });
             if (document.getElementById('pagepiling')) {
@@ -175,8 +175,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 window.removeEventListener('scroll', onScroll)
             }
 
-            const anchors = ['home', 'cases', 'about', 'services', 'partners', 'awards', 'testimonials', 'blog', 'contacts']
-            const labels = ['home', 'Selected works', 'about me', 'services', 'My clients', 'awards', 'testimonials', 'My insights', 'get in touch']
+            const anchors = ['home', 'cases', 'about', 'testimonials', 'contacts']
+            const labels = ['home', 'Selected works', 'about me', 'testimonials', 'get in touch']
 
             function setLabel(index) {
                 const label = labels[index];
