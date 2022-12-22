@@ -409,6 +409,12 @@ body {
           transform: rotate(-90deg);
 }
 
+/* home custom */
+#home.section-main {
+  padding-left: 300px;
+  padding-top: 20vh;
+}
+
 /* 2.13 About */
 .about {
   position: relative;
@@ -2759,7 +2765,7 @@ body {
 
 .header__menu-item.active a::after {
   right: 0;
-  background-color: #F3F3F3;
+  background-color: #E9CF49;
 }
 
 .header__menu-item:not(:first-child) {
@@ -2784,6 +2790,10 @@ body {
   position: relative;
 }
 
+.header__menu-item.active .header__menu-link {
+  color: #E9CF49; 
+}
+
 .header__menu-link::after {
   content: '';
   position: absolute;
@@ -2796,7 +2806,7 @@ body {
 }
 
 .header__menu-link:hover {
-  color: #F3F3F3;
+  color: #E9CF49;
 }
 
 .header__menu-contacts {
@@ -2970,3 +2980,7 @@ body {
 }
 
 /*# sourceMappingURL=maps/main.css.map */
+
+/*-------------------------------------------------------------------------------
+  --  Custom Responsiveness
+-------------------------------------------------------------------------------*/
