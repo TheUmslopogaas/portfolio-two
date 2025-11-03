@@ -414,6 +414,21 @@ body {
   padding-left: 300px;
   padding-top: 20vh;
 }
+@media (max-width: 500px) {
+  .header {
+    backdrop-filter: blur(10px);
+  }
+  #home.section-main {
+    padding-left: 30px;
+    padding-top: 20vh;
+  }
+  .home__desc {
+    font-size: 20px;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
 
 /* 2.13 About */
 .about {
@@ -475,6 +490,7 @@ body {
   .about__text-title {
     width: 100%;
     margin-right: 0;
+    font-size: 36px;
   }
 }
 
@@ -514,6 +530,7 @@ body {
   margin-top: 4.629vh;
   height: 47.77778vh;
   overflow: hidden;
+  display: none;
 }
 
 
@@ -1271,9 +1288,9 @@ body {
 }
 
 @media (max-width: 450px) {
-  .testimonials__title {
+  /* .testimonials__title {
     font-size: 28px;
-  }
+  } */
 }
 
 .testimonials__swiper-container {
